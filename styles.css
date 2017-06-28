@@ -1,0 +1,19 @@
+div {
+	height: 200px;
+	width: 95%;
+	background-color: red;
+
+}
+
+#display {
+	text-align: center;
+	padding-top: 50px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+button {
+	background-color: yellow;
+
+}
