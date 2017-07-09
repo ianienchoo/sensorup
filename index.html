@@ -8,12 +8,20 @@
 <body>
 
 <div>
-	<p id="display">Waiting for results</p>
+	<p id="display-info">HELLO</p>
 </div>
 
 <button id="get-reading">CLICK TO GET READING FROM SENSOR UP</button>
 
+<br>
+<div id="display-chart">
+	<canvas id="chart1" width="400" height="400"></canvas>
+</div>
+
+<button id="get-chart">CLICK TO CHART 5 MOST RECENT READINGS FROM SENSOR UP</button>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
