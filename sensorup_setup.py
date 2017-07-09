@@ -129,43 +129,6 @@ pprint.pprint(data_obs)
 
 
 
-
-## creat a filke cqakllkehackathon.py
-
-import grovepi, time, requests,json
-headers = {
-	"content-type": "application/json"
-}
-
-while True:
-	try:
-		if grovepi.getIRdist() == 0:
-			result = 1
-			
-
-		else:
-			result = 0
-
-		observation = {
-				"result" : result,
-				"Datastream": {"@iot.id":980128}
-			}
-
-		r = requests.post(URL + "/Observations", 
-			data=json.dumps(observation), 
-			headers=headers)
-
-
-	except Error:
-		print("issue")
-	
-	time.sleep(5)
-
-
-
-
-
-
 # STEP5: retrieve data from Sensorup
 r = requests.get(URL + "/Datastreams(" + 
 		str(datastreamID) + ")/Observations?" + 
